@@ -8,6 +8,7 @@ SIGNUP PAGE
 ![Sign Up Page](/resources/Screenshots/signup.png?raw=true "Sign Up Portal")
 
 A Project By:-
-
-Ayush Gupta             Sparsh Kumar Jha             Ayush Daksh <br>
-AAyushGuptAA               lostboy529                frozentoad9
+<pre>
+Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
+AAyushGuptAA      |         lostboy529         |       frozentoad9
+</pre>
