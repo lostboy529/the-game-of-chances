@@ -9,6 +9,6 @@ SIGNUP PAGE
 
 A Project By:-
 <pre>
-Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
-AAyushGuptAA      |         lostboy529         |       frozentoad9
+      Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
+      AAyushGuptAA      |         lostboy529         |       frozentoad9
 </pre>
