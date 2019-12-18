@@ -1,12 +1,12 @@
 # the-game-of-chances
 A web based gaming casino platform.
 
-LOGIN PAGE
+<center><h3>LOGIN PAGE</h3>
 ![Login Page](/resources/Screenshots/login.png?raw=true "Login Portal")
 
-SIGNUP PAGE
+<h3>SIGNUP PAGE</h3>
 ![Sign Up Page](/resources/Screenshots/signup.png?raw=true "Sign Up Portal")
-
+</center>
 A Project By:-
 <pre>
       Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
