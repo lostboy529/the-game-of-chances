@@ -10,7 +10,7 @@ $now = date('Y-m-d H:i:s', time());
         $host = "localhost";
         $dbusername = "root";
         $dbpassword = "";
-        $dbname = "organisation";
+        $dbname = "casino";
         // Create connection
         $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
         if (mysqli_connect_error()){
