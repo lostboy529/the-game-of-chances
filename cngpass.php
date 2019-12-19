@@ -1,7 +1,7 @@
 <?php
 session_start();
-$Opass = $_POST['txtOpass'];
-$NPass = $_POST['txtNpass'];
+$Opass = $_POST['password'];
+$NPass = $_POST['cpasspord'];
 $User = $_SESSION['userName'];
 date_default_timezone_set('Asia/Calcutta');
 $now = date('Y-m-d H:i:s', time());
@@ -11,7 +11,7 @@ $now = date('Y-m-d H:i:s', time());
         $host = "localhost";
         $dbusername = "root";
         $dbpassword = "";
-        $dbname = "organisation";
+        $dbname = "casino";
         // Create connection
         $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
         if (mysqli_connect_error()){

@@ -1,6 +1,11 @@
 # the-game-of-chances
 A web based gaming casino platform.
 
+![Login Page](/resources/Screenshots/login.png?raw=true "Login Portal")
+
+
+![Sign Up Page](/resources/Screenshots/signup.png?raw=true "Sign Up Portal")
+
 Backend and Scripting Handled by: Sparsh Kumar Jha(lostboy529)
 
 Hi, I'm Ayush.
