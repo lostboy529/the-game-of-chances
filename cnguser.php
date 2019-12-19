@@ -1,7 +1,8 @@
 <?php
 session_start();
-$Nuser = $_POST['txtnuser'];
+$Nuser = $_POST['username'];
 $User = $_SESSION['userName'];
+$pass = $_POST['password'];
 date_default_timezone_set('Asia/Calcutta');
 $now = date('Y-m-d H:i:s', time());
 
@@ -11,13 +12,15 @@ $now = date('Y-m-d H:i:s', time());
         $host = "localhost";
         $dbusername = "root";
         $dbpassword = "";
-        $dbname = "organisation";
+        $dbname = "casino";
         // Create connection
         $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+        $sql0 = "SELECT * FROM iuserlogin WHERE USERNAME = '$User' AND PASSWORD = '$pass'";
+            $result = $conn->query($sql0);
         if (mysqli_connect_error()){
         die('Connect Error ('. mysqli_connect_errno() .') '. mysqli_connect_error());
         }
-        else{
+        elseif($result->num_rows){
         $sql = "UPDATE iuserlogin SET USERNAME = '$Nuser' WHERE USERNAME = '$User'";
         $result = $conn->query($sql);
         if ($result){
@@ -31,6 +34,11 @@ $now = date('Y-m-d H:i:s', time());
         header("refresh:3; url=./login.html" );
         }
         $conn->close();
+        }
+        else{
+            echo "Wrong Username or Password. Redirecting....";
+            header("refresh:3; url=./login.html" );
+            $conn->close();
         }
         }
         }
