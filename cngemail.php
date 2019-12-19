@@ -1,6 +1,7 @@
 <?php
 session_start();
-$Nemail = $_POST['txtnemail'];
+$Nemail = $_POST['email'];
+$Nemailc = $_POST['email2'];
 $User = $_SESSION['userName'];
 date_default_timezone_set('Asia/Calcutta');
 $now = date('Y-m-d H:i:s', time());
@@ -16,7 +17,7 @@ $now = date('Y-m-d H:i:s', time());
         if (mysqli_connect_error()){
         die('Connect Error ('. mysqli_connect_errno() .') '. mysqli_connect_error());
         }
-        else{
+        else if($Nemail == $Nemailc){
         $sql = "UPDATE iuserlogin SET EMAIL = '$Nemail' WHERE USERNAME = '$User'";
         $result = $conn->query($sql);
         if ($result){
@@ -29,6 +30,10 @@ $now = date('Y-m-d H:i:s', time());
         header("refresh:3; url=./login.html" );
         }
         $conn->close();
+        }
+        else{
+            echo "Email IDs donot match...";
+            header("location:./account.php");
         }
         }
         }
