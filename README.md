@@ -9,6 +9,15 @@ A web based gaming casino platform.
 
 ![Sign Up Page](/resources/Screenshots/signup.png?raw=true "Sign Up Portal")
 
+<h3>ACCOUNT SETTINGS</h3>
+
+![Username Change](/resources/Screenshots/Account Setting(1).png?raw=true "Account Settings")
+
+<h4>ON CLICKING THE SIDE BLUE PANE</h4>
+
+![Password and Email change](/resources/Screenshots/Account Setting(2).png?raw=true "Account Settings")
+
+
 A Project By:-
 <pre>
       Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
