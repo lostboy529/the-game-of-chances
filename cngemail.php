@@ -11,7 +11,7 @@ $now = date('Y-m-d H:i:s', time());
         $host = "localhost";
         $dbusername = "root";
         $dbpassword = "";
-        $dbname = "organisation";
+        $dbname = "casino";
         // Create connection
         $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
         if (mysqli_connect_error()){
@@ -27,13 +27,13 @@ $now = date('Y-m-d H:i:s', time());
         }
         else{
         echo "Wrong Username or Password. Redirecting....";
-        header("refresh:3; url=./login.html" );
+        header("refresh:3; url=./endsession.php" );
         }
         $conn->close();
         }
         else{
             echo "Email IDs donot match...";
-            header("location:./account.php");
+            header("location:./account_settings.php");
         }
         }
         }
