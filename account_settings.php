@@ -387,38 +387,47 @@ $now = date('Y-m-d H:i:s', time());
             <h1>Change Password or Email</h1>
         </div>
         <div class="form-content">
-            <form method="post" action="cngpass.php">
+            <form id="cpass" method="post" action="cngpass.php">
                 <div class="form-group">
                     <label for="username">Username: <?php echo $Name?></label>
                 </div>
                 <div class="form-group">
                     <label for="password">Current Password</label>
-                    <input type="password" id="password" name="password" required="required" />
-                </div>
-                <div class="form-group">
-                    <label>New Password</label>
                     <input type="password" id="cpassword" name="cpassword" required="required" />
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="cng_pass">Change Password</button>
+                    <label>New Password</label>
+                    <input type="password" id="npassword" name="npassword" required="required" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="cng_pass" onclick="cngpass()">Change Password</button>
                 </div>
             </form>
         </div>
         <div class="form-content">
             <br>
-            <form method="post" action="cngemail.php">
+            <form id="cemail" method="post" action="cngemail.php">
                 <div class="form-group">
                     <label for="email">New Email Address</label>
                     <input type="email" id="email" name="email" required="required" />
                 </div>
                 <div class="form-group">
                     <label for="email2">Confirm Email Address</label>
-                    <input type="email" id="email" name="email" required="required" />
+                    <input type="email" id="email2" name="email2" required="required" />
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="cng_email">Change Email</button>
+                    <button type="submit" id="cng_email" onclick="cngemail()">Change Email</button>
                 </div>
             </form>
+            <script>
+                function cngpass() {
+                    document.getElementById("cpass").submit();
+                }
+
+                function cngemail() {
+                    document.getElementById("cemail").submit();
+                }
+            </script>
         </div>
     </div>
 </div>
