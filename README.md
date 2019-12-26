@@ -1,17 +1,25 @@
 # the-game-of-chances
 A web based gaming casino platform.
 
+<h3>LOGIN PAGE</h3>
+
 ![Login Page](/resources/Screenshots/login.png?raw=true "Login Portal")
 
+<h3>SIGNUP PAGE</h3>
 
 ![Sign Up Page](/resources/Screenshots/signup.png?raw=true "Sign Up Portal")
 
-Backend and Scripting Handled by: Sparsh Kumar Jha(lostboy529)
+<h3>ACCOUNT SETTINGS</h3>
 
-Hi, I'm Ayush.
-I'm in 1st year of my B-tech in IIT kharagpur, I'm working on this project "the-game-of-chances" as front-end handler.
-I'm quite good in HTML and CSS, and currently i'm learning Javascript and C.
+![Username Change](/resources/Screenshots/Account_Setting(1).png?raw=true "Account Settings")
 
-Hi, I'm Ayush Daksh.
-I'm a 1st year undergraduate in IIT kharagpur. I'm working on this project "the-game-of-chances" as logic developer.
-Well, I have done coding in C/C++ and currently learning python.
+<h4>ON CLICKING THE SIDE BLUE PANE</h4>
+
+![Password and Email change](/resources/Screenshots/Account_Setting(2).png?raw=true "Account Settings")
+
+
+A Project By:-
+<pre>
+      Ayush Gupta       |      Sparsh Kumar Jha      |       Ayush Daksh <br>
+      AAyushGuptAA      |         lostboy529         |       frozentoad9
+</pre>
