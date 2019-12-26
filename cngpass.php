@@ -1,7 +1,7 @@
 <?php
 session_start();
-$Opass = $_POST['password'];
-$NPass = $_POST['cpasspord'];
+$Opass = $_POST['cpassword'];
+$NPass = $_POST['npassword'];
 $User = $_SESSION['userName'];
 date_default_timezone_set('Asia/Calcutta');
 $now = date('Y-m-d H:i:s', time());
@@ -35,7 +35,7 @@ $now = date('Y-m-d H:i:s', time());
         }
         else{
         echo "Wrong Password. Redirecting....";
-        header("refresh:3; url=./login.html" );
+        header("refresh:3; url=./endsession.php" );
         }
         $conn->close();
         }
